@@ -48,7 +48,7 @@ async function editStudent(id) {
     const newAge = prompt('Enter new age: ');
     const newGrade = prompt('Enter new grade ');
 
-    // Send a PUT request to update a student record
+    // Send a PUT request to update a student record in the student table
     const response = await fetch(`/editStudent/${id}`, {
         method: 'PUT',
         headers: {
